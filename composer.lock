@@ -4,8 +4,19 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "07dd85371456253ffba1c0ec34eba9fb",
+    "hash": "69e697faec96631ef7c03b34b025093b",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.0",
+            "dist": {
+                "type": "zip",
+                "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NDcyMDN8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTAxLTA1IDE5OjAwOjIx",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.21",
@@ -184,6 +195,48 @@
             "time": "2013-09-09 15:04:54"
         },
         {
+            "name": "roots/soil",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/adaf4a0941224dfeab470a123d59dd925fc65004",
+                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-04-29 04:46:56"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.0.9",
             "source": {
@@ -233,6 +286,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/woocommerce",
+            "version": "2.3.8",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/woocommerce/",
+                "reference": "tags/2.3.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.2.3.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/woocommerce/"
         }
     ],
     "packages-dev": [],
