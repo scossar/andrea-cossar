@@ -1,6 +1,8 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/gravityforms/
+!web/app/plugins/testeleven-positioned/
 web/app/mu-plugins/*
 !web/app/mu-plugins/.gitkeep
 web/app/upgrade
