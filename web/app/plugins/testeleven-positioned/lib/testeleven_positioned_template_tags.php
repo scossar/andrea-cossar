@@ -1,6 +1,6 @@
 <?php
 
-namespace Testeleven\Positioned\TemplateTags;
+namespace Testeleven\PositionedContent\TemplateTags;
 
 // Template tags for displaying positioned posts and positioned post previews.
 
@@ -249,7 +249,7 @@ function post_in_position($position, $post_type, $heading_level = 2, $meta_data 
 	}
 }
 // Set the correct preview template
-add_filter('single_template', 'Testeleven\Positioned\TemplateTags\set_preview_template');
+add_filter('single_template', 'Testeleven\PositionedContent\TemplateTags\set_preview_template');
 function set_preview_template($templates) {
 	global $post;
 	if (is_preview()) {

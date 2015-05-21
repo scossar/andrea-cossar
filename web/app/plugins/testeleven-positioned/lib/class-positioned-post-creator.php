@@ -7,7 +7,6 @@
  * to create the new positioned post.
  */
 
-
 class Positioned_Post_Creator{
 	protected $position;
 	protected $post_type;

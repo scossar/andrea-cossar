@@ -7,6 +7,7 @@
  * The 'register_content' method returns a new instance of 'positioned_content'.
  * The 'positioned_content' instance knows about displaying itself.
  */
+
 class Testeleven_Positioned_Plugin {
 	protected static $instance = null;
 

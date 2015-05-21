@@ -3,6 +3,7 @@
  * Class Position returns an object that associates a 'position' with a
  * 'preview_position'.
  */
+
 class Position {
 	protected $position;
 	protected $preview_template;
