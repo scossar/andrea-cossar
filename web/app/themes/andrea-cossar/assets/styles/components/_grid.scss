@@ -1,10 +1,61 @@
 // Grid system
 .main {
   @include make-sm-column($main-sm-columns);
-  .sidebar-primary & {
-    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
-  }
+//  .sidebar-primary & {
+//    @include make-sm-column($main-sm-columns - $sidebar-sm-columns);
+//  }
 }
-.sidebar {
-  @include make-sm-column($sidebar-sm-columns);
+//.sidebar {
+//  @include make-sm-column($sidebar-sm-columns);
+//}
+
+// Setup for off-canvas menu
+
+.main {
+  margin-top: 180px;
+  position: relative;
 }
+
+.display-area {
+  overflow-x: hidden;
+}
+
+.off-canvas-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -999;
+}
+
+.display-area.is-open .off-canvas-wrapper {
+  z-index: 0;
+}
+
+.off-canvas {
+  position: absolute;
+  width: $off-canvas-width;
+  left: -$off-canvas-width;
+  top: 0;
+  bottom: 0;
+  background-color: #333;
+}
+
+.display-area.is-open .off-canvas,
+.display-area.is-open .main {
+  @include transition(all 0.3s ease);
+  transform: translate3d($off-canvas-width*2, 0, 0);
+}
+
+.display-area.is-open .main {
+  @include transition(all 0.3s ease);
+  transform: translate3d($off-canvas-width, 0, 0);
+}
+
+.display-area.is-close .off-canvas,
+.display-area.is-close .main {
+  @include transition(all 0.3s ease);
+  transform: translate3d(0, 0, 0);
+}
+

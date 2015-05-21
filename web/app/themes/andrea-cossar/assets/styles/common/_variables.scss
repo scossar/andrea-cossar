@@ -3,7 +3,7 @@ $icon-font-path: "../fonts/";
 
 // Grid settings
 $main-sm-columns: 12;
-$sidebar-sm-columns: 4;
+//$sidebar-sm-columns: 4;
 
 // Colors
 $brand-primary: #2f1c0a;
@@ -98,6 +98,9 @@ $carousel-control-opacity: 0.8;
 //$tooltip-bg: $brand-primary;
 //$tooltip-color: $inverse-color;
 //$tooltip-arrow-color: $brand-primary;
+
+// Offcanvas menu
+$off-canvas-width: 50%;
 
 
 

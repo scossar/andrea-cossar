@@ -1,6 +1,13 @@
 .banner {
   @include clearfix;
   font-family: $font-family-sans-serif;
+  border-bottom: 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: $body-bg;
   a {
     font-size: 18px;
   }

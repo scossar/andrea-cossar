@@ -23,6 +23,19 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        function rotateClasses(selector, class_one, class_two) {
+         if ($(selector).hasClass(class_one)) {
+           $(selector).removeClass(class_one);
+           $(selector).addClass(class_two);
+         } else {
+           $(selector).removeClass(class_two);
+           $(selector).addClass(class_one);
+         }
+        }
+
+        $('.navbar-toggle').click(function() {
+          rotateClasses('.display-area', 'is-close', 'is-open');
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
