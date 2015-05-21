@@ -1,9 +1,103 @@
 // Glyphicons font path
-$icon-font-path:        "../fonts/";
+$icon-font-path: "../fonts/";
 
 // Grid settings
-$main-sm-columns:       12;
-$sidebar-sm-columns:    4;
+$main-sm-columns: 12;
+$sidebar-sm-columns: 4;
 
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary: #2f1c0a;
+$brand-secondary: #ffcc00;
+
+$gray-base: darken($brand-primary, 5%);
+$gray-darker: lighten($gray-base, 15.5%);
+$gray-dark: lighten($gray-base, 20%);
+$gray: lighten($gray-base, 33.5%);
+$gray-light: lighten($gray-base, 46.7%);
+$gray-lighter: lighten($gray-base, 93.5%);
+
+$body-bg: #fff;
+
+// Custom variables
+$inverse-color: #fff;
+
+//$font-family-base: "freight-text-pro", sans-serif;
+$font-family-base: helvetica, sans-serif;
+//$headings-font-family: "droid-serif", sans-serif;
+$headings-font-family: $font-family-base;
+// We are using fonts from typekit. They are being loaded asynchronously. While they are loading the
+// class .wf-loading is applied to the html element.
+.wf-loading {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "droid-serif";
+    visibility: hidden;
+  }
+}
+
+// Rhythm
+$font-size-base: 22px;
+
+// From twitter
+$line-height-base: 1.428571429;
+
+// Rhythm mixins and function - the base size unit for the site
+$rhythm: floor($font-size-base * $line-height-base);
+$half-rhythm: floor($rhythm / 2);
+$quarter-rhythm: floor($rhythm / 4);
+$third-rhythm: floor($rhythm / 3);
+
+@function rhythm($units: 1) {
+  @return $units * $rhythm;
+}
+
+$grid-gutter-width: 30px;
+
+$border-radius-base: 4px;
+// Banner
+//$navbar-height:                    50px;
+$navbar-margin-bottom: 0;
+$navbar-border-radius: $border-radius-base;
+//$navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
+//$navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2);
+//$navbar-collapse-max-height:       340px;
+
+$navbar-default-color: $gray-dark;
+$navbar-default-bg: $body-bg;
+$navbar-default-border: darken($navbar-default-bg, 6.5%);
+
+// Navbar links
+$navbar-default-link-color: $navbar-default-color;
+$navbar-default-link-hover-color: $navbar-default-link-color;
+$navbar-default-link-hover-bg: transparent;
+$navbar-default-link-active-color: $navbar-default-link-color;
+$navbar-default-link-active-bg: transparent;
+$navbar-default-link-disabled-bg: transparent;
+
+// Navbar brand label
+$navbar-default-brand-color: $navbar-default-link-color;
+$navbar-default-brand-hover-color: darken($navbar-default-brand-color, 10%);
+$navbar-default-brand-hover-bg: transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg: lighten($brand-primary, 10%);
+$navbar-default-toggle-icon-bar-bg: $inverse-color;
+$navbar-default-toggle-border-color: $inverse-color;
+
+
+//=== Shared nav styles
+$nav-link-padding: 10px 15px;
+//$nav-link-hover-bg: $gray-lighter;
+
+//$nav-disabled-link-color: $gray-light;
+//$nav-disabled-link-hover-color: $gray-light;
+
+// Carousel
+$carousel-control-opacity: 0.8;
+
+// Tooltips
+//$tooltip-bg: $brand-primary;
+//$tooltip-color: $inverse-color;
+//$tooltip-arrow-color: $brand-primary;
+
+
+

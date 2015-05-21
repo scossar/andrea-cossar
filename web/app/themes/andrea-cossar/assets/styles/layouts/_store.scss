@@ -1,0 +1,12 @@
+main {
+  margin: $rhythm auto;
+}
+
+.woocommerce .quantity .qty {
+  padding: 7px;
+  margin: 0 $rhythm 0 0;
+}
+
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+  background: $brand-primary;
+}

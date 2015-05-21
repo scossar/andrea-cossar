@@ -1,0 +1,2 @@
+<?php
+woocommerce_content();

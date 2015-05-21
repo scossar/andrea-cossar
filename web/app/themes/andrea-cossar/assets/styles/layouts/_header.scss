@@ -1,0 +1,116 @@
+.banner {
+  @include clearfix;
+  font-family: $font-family-sans-serif;
+  a {
+    font-size: 18px;
+  }
+}
+
+// Secondary navigation --hidden for x-small screens
+.banner .header-secondary {
+  margin-top: $quarter-rhythm;
+  @include make-sm-column(12);
+  .secondary-navigation {
+    float: right;
+  }
+}
+
+.secondary-navigation ul {
+  margin-bottom: $quarter-rhythm;
+  line-height: 1;
+  list-style: none;
+  li {
+    display: inline-block;
+    border-right: 1px solid $inverse-color;
+    padding-right: $half-rhythm;
+    margin-right: $quarter-rhythm;
+  }
+  li:last-child {
+    border: none;
+    padding-right: 0;
+    margin-right: 0;
+  }
+  a {
+    font-size: 14px;
+  }
+}
+
+// Site logo and mobile nav button
+.banner-top-level {
+  @include make-sm-column(12);
+}
+
+// Button
+.banner-top-level button {
+//  float: none;
+  margin-top: $rhythm;
+  border: 1px solid;
+}
+
+// Navbar
+.nav-container-primary {
+  @include make-sm-column(12);
+  margin-top: 0;
+  margin-bottom: $half-rhythm;
+  background: pink;
+}
+
+.primary-nav-container ul{
+  width: 100%;
+  li  {
+    padding: $half-rhythm ($rhythm);
+  }
+}
+
+.navbar-nav li:hover {
+//  background-color: lighten($brand-primary, 5%);
+}
+.navbar-nav .active {
+//  background-color: lighten($brand-primary, 10%);
+}
+
+.navbar-nav li a {
+  line-height: 1;
+}
+
+
+// Underline a:hover and li.active on small+ screens.
+@media (min-width: $screen-sm-min) {
+  .navbar-nav ul li {
+    padding: 15px 46px;
+  }
+  .navbar-nav li:hover {
+//    background-color: $brand-primary;
+  }
+  .navbar-nav .active {
+//    background-color: $brand-primary;
+  }
+  .navbar-nav  li a {
+    border-bottom: 2px solid $navbar-default-bg;
+    padding: 0;
+    &:hover {
+      border-bottom-color: $navbar-default-color;
+    }
+  }
+  .primary-nav-container .active a {
+    border-bottom-color: $navbar-default-color;
+  }
+  .primary-nav-container {
+    margin: $quarter-rhythm auto;
+  }
+}
+
+// At 999px we want the navbar to move beside the logo
+@media (min-width: 999px) {
+  .banner .primary-nav-container {
+//    clear: none;
+//    @include make-sm-column(9);
+//    @include make-md-column(10);
+//    margin-top: 41px;
+    margin-bottom: 0;
+  }
+  .banner .site-logo {
+//    margin-top: -$half-rhythm;
+//    margin-bottom: 20px;
+  }
+}/*/mediaquery*/
